@@ -1,0 +1,52 @@
+:root {
+  --ink: #14241f;
+  --muted: #5e6f68;
+  --green: #12382f;
+  --green-deep: #0c2b24;
+  --cream: #f3efe8;
+  --paper: #fffcf8;
+  --line: #e3dcd1;
+  --gold: #a68456;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Manrope, "Noto Sans", "Noto Naskh Arabic", "Nirmala UI", "Segoe UI",
+    "Yu Gothic", "Malgun Gothic", "Microsoft YaHei", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(900px 480px at 50% -8%, #efe4d2 0%, transparent 62%),
+    var(--cream);
+}
+
+html[dir="rtl"] body {
+  font-family: "Noto Naskh Arabic", "Noto Sans", Manrope, sans-serif;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
